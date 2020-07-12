@@ -1,0 +1,9 @@
+/***This file shows a basic schema, required for the analyzer before \
+parsing the text in a document, and then passing it on to the indexer \
+for indexing in the Elasticsearch index . The index is then ready to process, no-sql queries \
+and output response in the form of top 10 matchign results **/
+
+
+obj= new Analyzer (objES)
+analyzed_content=obj.analyze ('web page content', customAnalyzer)
+analyzed_content.retrieve (query)
